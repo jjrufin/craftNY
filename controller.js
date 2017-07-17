@@ -16,14 +16,16 @@ $scope.getHttpData = function (){
 
 
   $scope.addFav = function (post) {
-    console.log('am I working');
     $scope.favorites.push(post);
     console.log($scope.favorites);
   }
 
   $scope.favorites = [];
 
-
+  $scope.remFav = function (post) {
+    var index = $scope.favorites.indexOf(post);
+    $scope.favorites.splice($scope.post, 1);
+  }
 
 
 });
