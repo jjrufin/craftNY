@@ -24,7 +24,7 @@ $scope.getHttpData = function (){
 
   $scope.remFav = function (post) {
     var index = $scope.favorites.indexOf(post);
-    $scope.favorites.splice($scope.post, 1);
+    $scope.favorites.splice(post, 1);
   }
 
 
