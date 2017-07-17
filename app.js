@@ -1,4 +1,4 @@
-var app = angular.module('redditApp', ['ngRoute']);
+var app = angular.module('redditApp', ['ngRoute', 'ui.bootstrap']);
 app.config(function($routeProvider){
 
   $routeProvider.when("/feed",{
