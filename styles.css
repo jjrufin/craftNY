@@ -1,0 +1,17 @@
+
+.post {
+  text-align: center;
+  width: auto;
+}
+
+.image {
+  height: 350px;
+  width: 500px;
+}
+
+.title {
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+  width: auto;
+}
