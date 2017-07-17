@@ -14,6 +14,13 @@ $scope.getHttpData = function (){
   }
   $scope.getHttpData();
 
+
+  $scope.addFav = function (post) {
+    console.log('am I working');
+    $scope.favorites.push(post);
+    console.log($scope.favorites);
+  }
+
   $scope.favorites = [];
 
 

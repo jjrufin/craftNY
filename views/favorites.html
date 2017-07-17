@@ -1,7 +1,8 @@
 <div ng-repeat="favorite in favorites">
   <div class="post">
     <img class="image" src="{{ favorite.data.url }}"/>
-    <h4></h4>
-    <p></p>
+    <h4> {{ favorite.data.title }}</h4>
+    <p> {{ favorite.data.author }} Score: {{ favorite.data.score }}</p>
+    <button class="btn btn-default" ng-click="remFav(post)">Favorite</button>
   </div>
 </div>
