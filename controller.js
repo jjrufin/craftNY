@@ -1,7 +1,7 @@
 var app = angular.module('redditApp');
 
 app.controller('redditCtrl', function($scope, $http, myfactory){
-
+// Service request
 $scope.getHttpData = function (){
     $scope.http = myfactory.getData();
     $scope.http.then(function(response){
@@ -19,7 +19,7 @@ $scope.getHttpData = function (){
     $scope.favorites.push(post);
     console.log($scope.favorites);
   }
-
+  // Favorite posts array
   $scope.favorites = [];
 
   $scope.remFav = function (post) {

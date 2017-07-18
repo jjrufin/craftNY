@@ -1,17 +1,31 @@
+#navbar {
+  color: #57a2e4;
+}
 
 .post {
   text-align: center;
-  width: auto;
+  height: auto;
+  width: 500px;
+  border-style: solid;
+  border-color: #e1e7f2;
+  margin: 20px;
 }
 
 .image {
   height: 350px;
-  width: 500px;
+  width: 100%;
 }
 
 .title {
-  border-style: solid;
-  border-color: black;
+  font-family: 'Arvo', serif;
+  line-height: 24px;
+  font-size: 18px;
   padding: 5px;
-  width: auto;
+  width: inherit;
+}
+
+.userinfo {
+  font: "helvetica";
+  font-size: 12px;
+  color: #999;
 }

@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body ng-controller="redditCtrl">
     <nav>
-      <a href="#!/feed">Feed</a>
-      <a href="#!/favorites">Favorites</a>
+      <div id="navbar" class="w3-bar w3-light-grey">
+      <a href="#!/feed" class="w3-bar-item w3-button">Feed</a>
+      <a href="#!/favorites" class="w3-bar-item w3-button">Favorites ({{ favorites.length }})</a>
+      </div>
     </nav>
     <ng-view></ng-view>
     <script src="lib/angular.min.js"></script>
